@@ -39,6 +39,10 @@ class Game:
         self.snake = Snake(self.surface)
         self.snake.draw()
 
+    def draw(self):
+        self.surface.fill((58, 13, 79))
+        self.snake.draw()
+
     def run(self):
         running = True
         while running:
